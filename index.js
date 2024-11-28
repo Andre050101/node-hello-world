@@ -1,2 +1,6 @@
 const parolaPassata = process.argv[2];
-console.log(`Hello ${parolaPassata}`);
+if (parolaPassata === undefined || parolaPassata === null)
+    console.log("Hello guest");
+else
+    console.log(`Hello ${parolaPassata}`);
+
